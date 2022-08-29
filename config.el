@@ -7,7 +7,9 @@
 (setq doom-theme 'doom-gruvbox-light)
 ;; configs of theme: gruvbox-light
 (custom-set-variables
- '(doom-gruvbox-light-variant 'soft))
+ '(doom-gruvbox-light-variant 'soft)
+ '(nyan-animate-nyancat t)
+ '(nyan-wavy-trail t))
 
 ;; line number: nil, t or 'relative
 (setq display-line-numbers-type 'relative)
@@ -70,5 +72,3 @@
 
 ;; Nyanyanyanyanyanyan!
 (nyan-mode 1)
-(setq nyan-animate-nyancat t
-      nyan-wavy-trail t)
