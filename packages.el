@@ -51,6 +51,11 @@
 ;; makes all packages rolling
 (unpin! t)
 
+;; lsp-volar for vue3
+(package! lsp-volar
+  :recipe (:host github
+           :repo "jadestrong/lsp-volar"
+           :files ("*")))
 ;; orgcms
 (package! orgcms
   :recipe (:host github

@@ -35,6 +35,9 @@
 (setq-default major-mode 'org-mode)
 (setq org-hide-emphasis-markets t)
 
+;; lsp-volar for vue
+(use-package! lsp-volar)
+
 ;; display current rime on mode-line
 (display-time-mode 1)
 (setq display-time-24hr-format t
