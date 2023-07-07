@@ -10,7 +10,7 @@
      ((equal str "after")
       (if (looking-at non-w-notation-regex)
 	  t nil))
-     (t (ding) (message "me/non-western-notation-p 参量错误")))))
+     (t (ding) (message "me/non-western-notation-p 参数错误")))))
 
 (defun me/org-emphasize-dwim (mark)
   (let (len-to-cover-until-end

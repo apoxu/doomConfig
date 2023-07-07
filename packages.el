@@ -93,7 +93,7 @@
 ;;            :repo "redguardtoo/pyim-tsinghua-dict"
 ;;            :files ("*")))
 
-;; ;; emacs-rime
+;; emacs-rime
 ;; (package! rime
 ;;   :recipe (:host github
 ;;            :repo "DogLooksGood/emacs-rime"
@@ -117,14 +117,30 @@
 ;;            :repo "chenyanming/kana"
 ;;            :files("*")))
 
-;;posframe-project-term
-;; (package! posframe-project-term
-;;   :recipe (:host github
-;;            :repo "zwpaper/posframe-project-term"
-;;            :files ("*.el")))
+;; posframe-project-term
+(package! posframe-project-term 
+  :recipe (:host github 
+           :repo "zwpaper/posframe-project-term" 
+           :files ("*.el"))) 
 
 ;; nyan-mode
 (package! nyan-mode
   :recipe (:host github
            :repo "TeMPOraL/nyan-mode"
            :files ("*")))
+
+;; dap-mode
+(package! dap-mode)
+(package! posframe)
+
+;; TODO
+;; (package! cargo-transient
+;;   :recipe (:host github
+;;            :repo "peterstuart/cargo-transient"
+;;            :files ("*.el")))
+
+;; show all modes
+(package! mode-minder
+  :recipe (:host github
+           :repo "jdtsmith/mode-minder"
+           :files ("*.el")))
