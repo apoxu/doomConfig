@@ -87,7 +87,6 @@
 ;; Vue
 (use-package! lsp-volar) ;;use lsp-volar as language sever for vue
 
-
 ;;; rust
 ;; (after! rustic
 ;;   (setq rustic-lsp-server 'rust-analyzer)
@@ -108,6 +107,7 @@
 ;;          :cwd nil
 ;;          :target nil
 ;;          )))
+
 ;; debugger
 ; use dap-codelldb as dap backend
 (setcdr (cdr (cdr (cdr (car (cdr (cdr (cdr (cdr (cdr (cdr (cdr +debugger--dap-alist))))))))))) '(dap-codelldb))
@@ -121,5 +121,23 @@
 ;; posframe-vterm
 (use-package! posframe-project-term)
 
-;;
+;; show all major and minor modes
 (use-package! mode-minder)
+
+;; eglot-x
+(with-eval-after-load 'eglot
+  (use-package! eglot-x
+    :config
+    (eglot-x-setup)))
+
+;; eldoc-box
+(use-package! eldoc-box
+  :hook
+  (eglot-managed-mode . eldoc-box-hover-at-point-mode))
+
+
+;; restclient
+(use-package! restclient)
+
+;; rustic
+(setq rustic-format-on-save t)

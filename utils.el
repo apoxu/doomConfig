@@ -1,4 +1,5 @@
 ;;; $DOOMDIR/utils.el -*- lexical-binding: t; -*-
+
 ;;中文行内格式优化
 (defun me/non-western-notation-p (str)
   "西文以及常用符号的补集, 所谓的“中文”符号判定"

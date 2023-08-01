@@ -144,3 +144,21 @@
   :recipe (:host github
            :repo "jdtsmith/mode-minder"
            :files ("*.el")))
+
+;; eglot-x
+(package! eglot-x
+  :recipe (:host github
+           :repo "nemethf/eglot-x"
+           :files ("*.el")))
+
+;; eldoc-box
+(package! eldoc-box
+  :recipe (:host github
+           :repo "casouri/eldoc-box"
+           :files ("*.el")))
+
+;; restclient
+(package! restclient
+  :recipe (:host github
+           :repo "pashky/restclient.el"
+           :files ("*.el")))
